@@ -22,6 +22,9 @@
 
  <!-- /////////////////////////// navbar //////////////// -->
   <nav class="navbar">
+    <div class="hamburger-icon">
+        <img src="./hamburger.svg" class="hamburger-img icon" />
+    </div>
     <div class="navbar-container container">
         <ul class="menu-items">
             <li><a href="#home">Home</a></li>
@@ -217,6 +220,34 @@
         </div>
     </div>
   </section>
+
+  <script>
+
+    const hamburger = document.querySelector(".hamburger-icon");
+
+    function clicked() {
+        const menu = document.querySelector(".menu-items");
+        
+        const img = document.querySelector(".icon");
+
+        if(img.classList.contains('hamburger-img')) {
+            img.setAttribute("src", "./arrow.svg");
+            img.classList.remove('hamburger-img');
+            img.classList.add('arrow-img');
+            menu.style.transform = 'translateX(0)';
+        } else {
+            img.setAttribute("src", "./hamburger.svg");
+            img.classList.remove('arrow-img');
+            img.classList.add('hamburger-img');
+            menu.style.transform = 'translateX(-400px)';
+        }
+    }
+
+    hamburger.addEventListener("click", clicked);
+
+
+
+  </script>
 
 
   <!-- //////////////////////// footer //////////////// -->

@@ -56,7 +56,7 @@ img {
 
 /* //////////////////////// media queries //////////////// */
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     :root {
         font-size: 7px;
     }

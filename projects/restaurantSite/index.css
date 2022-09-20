@@ -9,21 +9,28 @@
     width: 100%;
     background-color: #091921;
     color: rgba(255, 255, 255, 0.987);
-    opacity: 0.85;
     z-index: 9999;
+    /* border: 3px solid blue; */
+    height: 50px;
 }
 
 .navbar-container {
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
-    height: 50px;
     align-items: center;
 }
+
+.hamburger-icon {
+    display: none;
+}
+
 
 
 .menu-items {
     order: 2;
     display: flex;
+    /* border: 2px solid yellow; */
 }
 
 .menu-items li {
