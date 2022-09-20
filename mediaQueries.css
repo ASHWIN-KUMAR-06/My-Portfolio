@@ -1,0 +1,135 @@
+
+
+@media (max-width:450px){
+
+    /* ///////////////// navigation ////////// */
+
+
+    .navigation {
+        /* border: 2px solid red; */
+        height: 10vh;
+        width: 99%;
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin: 0rem auto;
+        box-shadow: 0px 0px 5px 5px black;
+        flex-direction: row;
+        background-color: rgb(10, 25, 33);
+    }
+
+    .navigation .icons {
+        background-color: rgb(241, 234, 234);
+        margin: auto;
+        /* border: 3px solid yellow; */
+    }
+    
+
+    .navigation div:nth-child(1),
+    .navigation div:nth-child(2) {
+        margin: auto;
+    }
+
+    .navigation .icons .links {
+        transform: translate(-20%, -20%);
+    }
+
+    .navigation .icons:nth-child(1) > .links {
+        left: 20px;
+        top: 10px;
+    }
+    .navigation .icons:nth-child(5):hover .links{
+        transform: translate(-40%, 170%);
+    }
+
+    .navigation .icons:hover .links {
+        opacity: 1;
+        transform: translate(-20%, 170%);
+    }
+
+
+
+    /* ////////////////// header /////////////// */
+
+    .header {
+        height: 100%;
+        /* border: 3px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header .image {
+        width: 100%;
+        /* border: 3px solid blue; */
+    }
+    
+    .header .content {
+        /* border: 2px solid red; */
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header .content h2 span {
+        font-size: 3rem;
+    }
+
+    .header .content .download-cv-btn {
+        margin-top: 5rem;
+    }
+
+
+    /* /////////// about-me section ///////// */
+
+    .about-me {
+        /* border: 3px solid red; */
+        height: 100%;
+        padding-top: 10rem;
+    }
+
+    .about-me-box {
+        /* border: 2px solid yellow; */
+        flex-direction: column;
+        position: relative;
+    }
+
+    .about-me-box .box {
+        width: 100%;
+    }
+
+    .about-me-box .left-box {
+        padding: 3rem 1rem;
+        text-align: justify;
+    }
+    
+
+    .about-me-box .right-box .contacts {
+        padding-top: 2rem;
+    }
+
+    .about-me-box .right-box .contacts .icons {
+        margin: 1rem auto;
+    }
+
+
+    /* ///////////////// project section ///////// */
+
+    .projects {
+        /* border: 2px solid red; */
+        height: 100%;
+        padding: 7rem 0;
+    }
+    
+    .projects-container {
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+
+    .projects-container > a {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+
+}

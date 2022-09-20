@@ -1,0 +1,79 @@
+
+body {
+    text-transform: lowercase;
+}
+
+.wrapper {
+    height: 100vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.calculator {
+    border: 5px solid yellow;
+    font-size: 2rem;
+    width: 43rem;
+    margin-bottom: 1rem;
+    /* height: 80vh; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator .tile {
+    text-align: center;
+    padding: 2rem 0;
+    border: 1px solid yellow;
+    width: 25%;
+}
+
+.calculator .ac {
+    text-transform: uppercase;
+}
+
+.calculator .tile:hover {
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+}
+
+.calculator .tile:active {
+    background-color: rgba(255, 0, 0, 0.801);
+}
+
+.calculator .tile.erase {
+    text-transform: uppercase;
+}
+
+.calculator .screen {
+    /* border: 1px solid blue; */
+    /* border-bottom: 5px solid white; */
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-color: white;
+}
+
+.screen p {
+    text-align: right;
+    /* width: 95%; */
+    height: 5vh;
+    font-size: 3rem;
+    padding: 0 1rem;
+    /* border: 2px solid blue; */
+    /* background-color: white; */
+    color: black;
+}
+

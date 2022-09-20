@@ -1,0 +1,44 @@
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.wrapper {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.wrapper > * {
+    margin: 0.2rem auto;
+    font-size: 5rem;
+}
+
+.wrapper .number {
+    font-size: 6rem;
+}
+
+.wrapper .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper .buttons .btn {
+    text-transform: uppercase;
+    margin: 0 1rem;
+    display: block;
+    padding: 0.4rem 0.8rem;
+}
+
+.btn:hover {
+    background-color: rgb(146, 146, 146);
+    /* cursor: pointer; */
+}

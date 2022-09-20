@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Rubik:wght@300;400&display=swap');
+
+:root {
+    font-size: 62.5%
+}
+
+*{
+    font-family: "Oleo Script Swash Caps", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+li {
+    list-style: none;
+}
+
+/* /////////////////////////////////////////////// */
+
+
+/* //////////////// utility classes /////////////////// */
+
+
+body {
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////  index.html //////////////////////////////////////////// */
+
+
+/* /////////////////////////////  header //////////////// */
+
+.header {
+    height: 100vh;
+    background: url("./images/image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    color: white;
+}
+
+.header a{
+    color: white;
+}
+
+nav {
+    padding-top: 1rem;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin: auto 0;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a:hover {
+    border-bottom: 0.2rem rgb(212, 217, 220) solid;
+    color: rgb(212, 217, 220);
+}
+
+nav a:active {
+    color: aliceblue;
+}
+
+
+.heading-center {
+    /* border: 2px solid blue; */
+    font-size: 2rem;
+    text-align: center;
+
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-center a {
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    border-radius: 5rem;
+}
+
+
+.heading-center a:hover {
+    background-color: rgb(198, 205, 212);
+}
+
+.heading-center a:active {
+    background-color: rgb(235, 245, 255);
+}
+
+
+/* //////////////////////////// section ///////////////////// */
+
+section .container {
+    padding: 5rem 0;
+    z-index: 5;
+}
+
+.section {
+    background-color: rgb(220, 220, 220);
+    z-index: 0;
+}
+
+section .box1 {
+    box-shadow: 1px 1px 50px 2px black;
+    margin-top: 7rem;
+    background-color: white;
+}
+
+.box1 .img {
+    width: 50%;
+    float: left;
+    padding: 1rem;
+}
+
+.box1 .text {
+    width: 50%;
+    float: right;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.section img {
+    height: 100%;
+    width: 100%;
+}
+
+.section .box1::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+section .box2 {
+    /* border: 2px solid red; */
+    box-shadow: 1px 1px 50px 2px black;
+    margin-top: 7rem;
+    background-color: white;
+}
+
+section .box2 .text {
+    width: 50%;
+    float: left;
+    text-align: justify;
+    padding: 1rem;
+}
+
+section .box2 .img {
+    width: 50%;
+    float: right;
+    padding: 1rem;
+}
+
+.section .box2::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+section a {
+    display: inline-block;
+    border: 0.2rem solid red;
+    padding: 0.2rem 2rem;
+    border-radius: 5rem;
+}
+
+section a:hover {
+    background-color: rgba(255, 0, 0, 0.91);
+}
+section a:active {
+    background-color: red;
+}
+
+
+
+
+ /* ///////////////////////////// section 2 /////////////// */
+
+
+.section-2.container {
+    /* border: 2px solid red; */
+    padding: 5rem 0;
+}
+
+.box {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px 0px black;
+}
+
+.box div span {
+    text-align: center;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.box .one {
+    width: 33.4%;
+    float: left;
+    padding: 2rem;
+    background-color: rgb(33, 29, 29);
+}
+.box .two {
+    width: 33.2%;
+    float: left;
+    padding: 2rem;
+    background-color: rgb(197, 21, 21);
+}
+.box .three {
+    width: 33.4%;
+    float: left;
+    padding: 2rem;
+    background-color: rgb(33, 29, 29);
+}
+
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+/* ///////////////////////////// footer /////////////////// */
+
+
+footer {
+    background-color: rgb(33, 29, 29);
+}
+
+.icons {
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.icons img {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.icons > div {
+    margin: 1rem 1rem;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    /* border: 1px solid red; */
+}
+
+footer .container {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////// about.html /////////////////////////////////////// */
+
+
+/* ///////////// nav //////// */
+
+.about-nav {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .container a {
+    color: white;
+}
+
+/* ////////////// section ////////// */
+
+/* .about-section .container {
+
+} */
+
+.about-section h2 {
+    border-bottom: 0.5rem solid rgba(255, 0, 0, 0.859);
+    margin-bottom: 1rem;
+}
+
+.about-box div {
+    display: inline-block;
+    width: 49.7%;
+    /* border: 1px solid blue; */
+    color: rgba(255, 0, 0, 0.859);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.about-box img {
+    height: 1.8rem;
+    width: 1.8rem;
+    color: rgba(255, 0, 0, 0.859);
+}
+
+.numbers {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.numbers div {
+    display: inline-block;
+    width: 24%;
+}
+
+.numbers div h3 {
+    color: rgba(255, 0, 0, 0.859);
+}
+
+.down-button {
+    background-color: rgba(255,0,0,0.859);
+    padding: 1rem;
+}
+
+.down-button p {
+    display: inline-block;
+    width: 70%;
+}
+
+.about-section div.down-button a {
+    display: inline-block;
+    width: 29%;
+    border: white 0.3rem solid;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////  contact.html ////////////////////////////////////////////////////// */
+
+.contact-section {
+    background-color: gainsboro;
+}
+
+.contact-section .container {
+    /* border: 10px solid red; */
+    padding: 2rem 0;
+}
+
+.contact-box1 {
+    /* display: inline-block; */
+    float: left;
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    /* border: 2px solid blue; */
+    margin: 2rem 0;
+    padding: 2rem 0;
+    box-shadow: 0px 0px 10px 1px grey;
+
+}
+
+.contact-box2 {
+    /* display: inline-block; */
+    float: right;
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    /* border: 2px solid green; */
+    margin: 2rem 0;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 10px 1px grey;
+
+}
+
+.contact-section .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.contact-box1 img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-box1 div {
+    margin: 2rem 0;
+}
+
+.contact-box1 div {
+    padding: 0 1rem;
+}
+
+
+.contact-box1 div.image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.contact-box2 h2 {
+    border-bottom: 0.5rem solid rgba(255,0,0,0.859);
+    margin-bottom: 1rem;
+}
+
+.contact-box2 p {
+    margin-bottom: 1rem;
+}
+
+.contact-box2 form input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.contact-box2 textarea {
+    width: 100%;
+    height: 15rem;
+}
+
+/* form input:hover {
+    height: 4rem;
+    outline: none;
+    background-color: rgba(181, 63, 63, 0.307);
+} */
+
+form .button {
+    text-align: center;
+}
+
+form button {
+    font-size: 3rem;
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+    background-color: rgba(255,0,0,0.859);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgba(255, 0, 0, 0.673);
+}
+

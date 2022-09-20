@@ -1,0 +1,79 @@
+
+@media (max-width:400px) {
+
+    /* ///////// about section ///////// */
+    .about-container {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .about-content, .about-img {
+        height: 100%;
+        width: 100%;
+        margin: 0rem auto;
+    }
+
+    .about-content {
+        order: 2;
+    }
+    .about-img {
+        order: 1;
+    }
+
+
+    /* ///////////////// food category /////////////// */
+
+    .category-container {
+        margin: 10rem auto;
+    }
+
+    .food-box {
+        display: block;
+    }
+
+    .img-box {
+        margin: 2rem auto;
+    }
+
+
+    /* ////////////////// food menu ////////////////// */
+
+    .food-items-box {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    .food-img {
+        height: 120px;
+    }
+
+    .food-content {
+        height: 120px;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+
+
+    /* //////////////////// testimonials //////////////// */
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+
+    /* ///////////////////////  contact ///////////// */
+
+    .contact-container {
+        display: block;
+    }
+
+    .contact-img {
+        height: 40vh;
+    }
+
+    .contact-form {
+        margin-top: 3rem;
+    }
+
+
+}

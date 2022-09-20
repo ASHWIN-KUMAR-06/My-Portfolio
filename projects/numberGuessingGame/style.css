@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:wght@300;400;500;700&family=Rubik:wght@300;400&family=Schoolbell&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --red : hsl(207, 80%, 10%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+    background-color: var(--red);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+span {
+    display: block;
+}
+
+
+/* ---------------------------------------------------- */
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 5rem 0;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div {
+    /* border: 2px solid blue; */
+
+    color: white;
+}
+
+.container .title {
+    font-size: 4rem;
+    color: rgb(255, 213, 0);
+}
+
+.container .text {
+    font-size: 3rem;
+    color: rgb(246, 0, 139);
+}
+
+.container .new-game {
+    /* border: 3px solid blue; */
+    padding: 0rem 2rem;
+    margin: 1rem 0;
+    display: none;
+    background-color: white;
+    color: blue;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+.container .playing-area {
+    /* border: 3px solid red; */
+    padding: 0 5rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.container .playing-area .remark {
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.4rem;
+    /* border: 2px solid white; */
+
+}
+
+.container .playing-area .guess-count {
+    /* border: 2px solid red; */
+    width: 10%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.container .playing-area .winning-number {
+    /* border: 3px solid red; */
+    margin: 0 1rem;
+    padding-top: 0.65rem;
+    text-align: center;
+    height: 35%;
+    width: 10%;
+    margin: auto;
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px 1px black;
+    opacity: 1;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.container .playing-area .winning-number .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.99);
+    transform: translate(0, -100%);
+}
+
+.container .playing-area input {
+    display: inline-block;
+    text-align: center;
+    width: 10rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 900;
+    box-shadow: 1px 1px 5px 1px rgb(18, 18, 18);
+}
+
+.container .playing-area button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    outline: 2px solid rgb(31, 202, 31);
+    /* border: none; */
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.container .playing-area button:hover {
+    background-color: rgb(33, 31, 31);
+}
+
+.container .playing-area button:active {
+    background-color: rgb(17, 17, 17);
+}
+
+.container .play-button {
+    margin-top: 2rem;
+    width: 50%;
+    /* border: 2px solid gray; */
+}
+.container .play-button button {
+    width: 50%;
+    transform: translate(50%, 0);
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: rgb(31, 202, 31);
+    color: black;
+    font-weight: 600;
+}
+
+.container .play-button button:hover {
+    background-color: rgb(33, 31, 31);
+    color: white;
+}
+
+.container .play-button button:active {
+    background-color: rgb(17, 17, 17);
+    color: black;
+}
+

@@ -1,0 +1,96 @@
+
+/* //////////////////////////////////////////////////////////////  media queries //////////////////////////////////////////////// */
+
+
+@media (max-width:500px) {
+
+
+    /* ////////////////////////////////// index.html //////////////// */
+
+    :root {
+        font-size: 7px;
+    }
+
+    .container {
+        width: 320px;
+        margin: 0 auto;
+        /* border: 3px solid red; */
+    }
+
+    .section .box1 .img {
+        float: none;
+        width: 100%;
+    }
+    .section .box1 .text {
+        float: none;
+        width: 100%;
+    }
+
+    .section .box2 .text {
+        float: none;
+        width: 100%;
+    }
+    .section .box2 .img {
+        float: none;
+        width: 100%;
+    }
+
+    .section-2 .box > div {
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+
+    /* /////////////////////////////////////  about.html /////////////////// */
+
+    .about-section .container {
+        box-shadow: 1px 1px 15px 2px grey;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .about-box div {
+        display: block;
+        width: 100%;
+    }
+
+    .down-button p {
+        display: block;
+        width: 100%;
+    }
+    
+    .about-section div.down-button a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        color: white;
+    }
+
+
+
+    /* /////////////////////////////////  contact.html ///////////////// */
+
+
+    .contact-box1, .contact-box2 {
+        float: none;
+        width: 100%;
+        padding: 2rem 2rem;
+        box-shadow: 0px 0px 10px 1px grey;
+    }
+
+    .contact-box2 .button {
+        margin-top: 3rem;
+    }
+
+    button {
+        color: white;
+    }
+
+}
