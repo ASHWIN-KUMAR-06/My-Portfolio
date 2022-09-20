@@ -3,7 +3,7 @@
 /* ///////////////// navigation //////////// */
 
 .navigation {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 90vh;
     width: 7rem;
     display: flex;
